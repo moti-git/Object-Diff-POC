@@ -1,0 +1,40 @@
+[{
+  "macId" : null,
+  "cmMacAddress" : "34:df:65",
+  "type" : "Network",
+  "ownerId" : null,
+  "profile" : null,
+  "model" : [{  "deviceType" : null,
+				  "modelNumber" : null,
+				  "softwareVersionNumber" : null,
+				  "vendorName" : null,
+				  "deviceSerialNumber" : null,
+				  "maxPorts" : null
+		    }],
+  "portMap" : [	{
+				  "A" : "B"
+				}
+  	          ],
+  "status" : null
+},
+{
+  "macId" : null,
+  "cmMacAddress" :"34:df:66",
+  "type" : "Test",
+  "ownerId" : null,
+  "profile" : null,
+  "model" : [{  "deviceType" : null,
+				  "modelNumber" : null,
+				  "softwareVersionNumber" : null,
+				  "vendorName" : null,
+				  "deviceSerialNumber" : null,
+				  "maxPorts" : null
+		    }	],
+  "portMap" : [	{
+				  "A" : "B"
+				}
+  	          ],
+  "status" : null
+}
+]
+
