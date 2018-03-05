@@ -80,7 +80,7 @@ public class DSComparisonUtil {
 	    return mapFields;
 	}
 
-	public static Diff getObjectDiffComparisionVal(Device d1, Device d2) {
+	public static Diff getObjectDiffComparisionVal(Object d1, Object d2) {
 		Javers javers = JaversBuilder.javers().build();
 		Diff diff = javers.compare(d1, d2);
 		

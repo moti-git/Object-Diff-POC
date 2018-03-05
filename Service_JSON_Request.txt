@@ -1,0 +1,71 @@
+http://localhost:8080/CharterPOC/api/deepServiceComparison/
+
+[{
+		"serviceId": "1001",
+		"parentServiceId": null,
+		"serviceAddressId": null,
+		"serviceName": null,
+		"serviceAccountId": null,
+		"status": {
+			"status": null,
+			"agcStatus": null,
+			"cfsStatus": null,
+			"easStatus": null,
+			"nbStatus": null,
+			"extensionStatus": null
+		},
+		"type": null,
+		"topology": {},
+		"profile": {
+			"dsBurst": null,
+			"maxDs": null,
+			"maxCpes": null,
+			"maxUs": null,
+			"scnUs": null,
+			"scnDs": null,
+			"usBurst": null,
+			"classOfService": null,
+			"provisonGroup": null,
+			"fqdn": null,
+			"dhcp": null,
+			"cmsport": null,
+			"cms": null,
+			"ipAddress": null
+		},
+		"characteristics": {}
+	},
+	{
+		"serviceId": "1003",
+		"parentServiceId": null,
+		"serviceAddressId": null,
+		"serviceName": null,
+		"serviceAccountId": null,
+		"status": {
+			"status": null,
+			"agcStatus": null,
+			"cfsStatus": null,
+			"easStatus": null,
+			"nbStatus": null,
+			"extensionStatus": null
+		},
+		"type": null,
+		"topology": {},
+		"profile": {
+			"dsBurst": null,
+			"maxDs": null,
+			"maxCpes": null,
+			"maxUs": null,
+			"scnUs": null,
+			"scnDs": null,
+			"usBurst": null,
+			"classOfService": null,
+			"provisonGroup": null,
+			"fqdn": null,
+			"dhcp": null,
+			"cmsport": null,
+			"cms": null,
+			"ipAddress": null
+		},
+		"characteristics": {}
+	}
+]

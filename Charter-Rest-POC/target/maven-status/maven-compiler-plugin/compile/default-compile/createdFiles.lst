@@ -1,3 +1,5 @@
+com\charter\poc\service\ObjectServiceImpl.class
+com\charter\poc\service\ObjectService.class
 com\charter\poc\SpringBootRestApiApp.class
 com\spectrum\tos\model\account\Status.class
 com\charter\poc\service\DeviceService.class

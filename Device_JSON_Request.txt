@@ -1,0 +1,42 @@
+http://localhost:8080/CharterPOC/api/deepDeviceComparison/
+
+[{
+  "macId" : null,
+  "cmMacAddress" : "34:df:65",
+  "type" : "Network",
+  "ownerId" : null,
+  "profile" : null,
+  "model" : {  "deviceType" : "d1",
+				  "modelNumber" : null,
+				  "softwareVersionNumber" : null,
+				  "vendorName" : null,
+				  "deviceSerialNumber" : null,
+				  "maxPorts" : null
+		    },
+  "portMap" : 	{
+				  "A" : "C"
+				}
+  	          ,
+  "status" : null
+},
+{
+  "macId" : null,
+  "cmMacAddress" :"34:df:66",
+  "type" : "Test",
+  "ownerId" : null,
+  "profile" : null,
+  "model" : {  "deviceType" : "d2",
+				  "modelNumber" : null,
+				  "softwareVersionNumber" : null,
+				  "vendorName" : null,
+				  "deviceSerialNumber" : null,
+				  "maxPorts" : null
+		    },
+  "portMap" : 	{
+				  "A" : "B"
+				}
+  	          ,
+  "status" : null
+}
+]
+

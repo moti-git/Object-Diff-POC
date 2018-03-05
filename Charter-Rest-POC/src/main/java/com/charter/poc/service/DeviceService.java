@@ -12,7 +12,7 @@ public interface DeviceService {
 	public Map<String, Map<Object, Object>> getDeviceComparision(Device device1, Device device2) 
 			throws IllegalArgumentException, IllegalAccessException;
 	
-	public Diff getObjectDiffComparisionVal(Device device1, Device device2);
+	public Diff getDeviceObjDiffComparisionVal(Device device1, Device device2);
 			
 	
 }

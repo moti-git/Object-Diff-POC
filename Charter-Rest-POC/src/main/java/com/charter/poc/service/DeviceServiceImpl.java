@@ -17,7 +17,7 @@ public class DeviceServiceImpl implements DeviceService{
 		return DSComparisonUtil.getDiffirentComparisionVal(device1, device2);
 	}
 	
-	public Diff getObjectDiffComparisionVal(Device device1, Device device2) {
+	public Diff getDeviceObjDiffComparisionVal(Device device1, Device device2) {
 		return DSComparisonUtil.getObjectDiffComparisionVal(device1, device2);
 	}
     

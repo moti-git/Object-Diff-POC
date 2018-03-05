@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.charter.poc.service.DeviceService;
+import com.charter.poc.service.ObjectService;
+import com.spectrum.tos.model.account.Service;
 import com.spectrum.tos.model.device.Device;
 
 
@@ -24,10 +26,15 @@ public class RestApiController {
 
 	 
 	@Autowired
-	DeviceService deviceService;//Service which will do all data retrieval/manipulation work
+	DeviceService deviceService;//Service which will do Device object comparison
 
+	@Autowired
+	ObjectService <Device>deviceObjectService; //Service which will do all object comparison
 	
-	@RequestMapping(value="/deviceComparison/", method = RequestMethod.POST)
+	@Autowired
+	ObjectService <Service>serviceObjectService; //Service which will do all object comparison
+	
+	@RequestMapping(value="/comparison/", method = RequestMethod.POST)
 	public Map<String, Map<Object, Object>> getDeviceComparision(@RequestBody List<Device> deviceList) {
 		logger.info("Fetching Difference");
 		
@@ -41,13 +48,35 @@ public class RestApiController {
 		
 	}
 	
-	@RequestMapping(value="/objectComparison/", method = RequestMethod.POST)
-	public Diff getObjectComparisionVal(@RequestBody List<Device> deviceList) {
+	@RequestMapping(value="/deviceComparison/", method = RequestMethod.POST)
+	public Diff getDeviceComparisionVal(@RequestBody List<Device> deviceList) {
 		logger.info("Fetching Object Difference");
 			
-	  return deviceService.getObjectDiffComparisionVal(deviceList.get(0), deviceList.get(1));
+	  return deviceService.getDeviceObjDiffComparisionVal(deviceList.get(0), deviceList.get(1));
 		
 		
 	}
+	
+	@RequestMapping(value="/deepDeviceComparison/", method = RequestMethod.POST)
+	public Diff getDeviceObjectComparisionVal(@RequestBody List<Device> deviceList) {
+		logger.info("Fetching Object Difference");
+			
+		 if(!deviceList.isEmpty() && deviceList.size() == 2)	
+		return deviceObjectService.getDeviceObjDiffComparisionVal(deviceList.get(0), deviceList.get(1));
+		return null;
+		
+	}
+	
+	@RequestMapping(value="/deepServiceComparison/", method = RequestMethod.POST)
+	public Diff getServiceObjectComparisionVal(@RequestBody List<Service> serviceList) {
+		logger.info("Fetching Object Difference");
+	  
+	 if(!serviceList.isEmpty() && serviceList.size() == 2)	
+	  return serviceObjectService.getDeviceObjDiffComparisionVal(serviceList.get(0), serviceList.get(1));
+	  return null;	
+		
+	}
+	
+	
 
 }
